@@ -1,6 +1,9 @@
 <h1>My Cakes</h1>
-<p>
-  {{cake.name}}
-</p>
-
-<input [(ngModel)]="cake.name">
+<ul>
+  <li *ngFor="let cake of cakes">
+    <span class="badge">
+      {{cake.id}}
+    </span>
+    {{cake.name}}
+  </li>
+</ul>
