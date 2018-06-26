@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Cake} from '../cake'
+import {CAKES} from '../mock-cake'
+
 @Component({
   selector: 'app-cakes',
   templateUrl: './cakes.component.html',
@@ -12,6 +14,7 @@ export class CakesComponent implements OnInit {
     name:"Chocolate",
     picUrl: ""
   }
+  cakes= CAKES
   constructor() { }
 
   ngOnInit() {
