@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Cake} from '../cake'
 @Component({
   selector: 'app-cakes',
   templateUrl: './cakes.component.html',
@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CakesComponent implements OnInit {
 
+  cake: Cake={
+    id: 1,
+    name:"Chocolate",
+    picUrl: ""
+  }
   constructor() { }
 
   ngOnInit() {
