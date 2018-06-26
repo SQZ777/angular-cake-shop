@@ -34,6 +34,21 @@ li {
     left: -.5em;
 }
 
+.detail {
+    color: slategray;
+    font-size: 1.2em;
+}
+
+.detail img{
+    display: inline-block;
+    background-color: #bbbbbb;
+    padding: 20px;
+    margin: 0 20px;
+    width:180px;
+    height:180px;
+}
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }

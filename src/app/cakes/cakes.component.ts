@@ -12,7 +12,7 @@ export class CakesComponent implements OnInit {
   cake: Cake={
     id: 1,
     name:"Chocolate",
-    picUrl: ""
+    picUrl: require("./imgs/cake.jpg")
   }
   cakes= CAKES
   constructor() { }
