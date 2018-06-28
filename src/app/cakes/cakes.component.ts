@@ -11,7 +11,7 @@ export class CakesComponent implements OnInit {
 
   cake: Cake={
     id: 1,
-    name:"Chocolate",
+    name:"Chocolate Cake",
     picUrl: require("./imgs/cake.jpg")
   }
   cakes= CAKES
