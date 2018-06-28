@@ -15,7 +15,7 @@ export class CakesComponent implements OnInit {
   ngOnInit() {
   }
   selectedCake: Cake;
-  
+
   onSelect(cake :Cake) :void{
     this.selectedCake = cake;
   }
