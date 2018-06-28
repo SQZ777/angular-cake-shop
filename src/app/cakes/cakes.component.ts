@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 import {Cake} from '../cake'
 import {CAKES} from '../mock-cake'
 
@@ -9,15 +9,15 @@ import {CAKES} from '../mock-cake'
 })
 export class CakesComponent implements OnInit {
 
-  cake: Cake={
-    id: 1,
-    name:"Chocolate Cake",
-    picUrl: require("./imgs/cake.jpg")
-  }
   cakes= CAKES
   constructor() { }
 
   ngOnInit() {
+  }
+  selectedCake: Cake;
+  
+  onSelect(cake :Cake) :void{
+    this.selectedCake = cake;
   }
 
 }
