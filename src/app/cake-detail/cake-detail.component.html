@@ -1,15 +1,26 @@
-
-<h1 *ngIf="cake">{{cake.name}} Details!</h1>
-<div *ngIf="cake" class="content">
+<h1 *ngIf="cake">
+  {{cake.name}} Details!</h1>
+<div class="content">
+  <div>
+    <img src="./assets/imgs/{{cake.picUrl}}">
+  </div>
+  <div class="detail">
     <div>
-      <img src="./assets/imgs/{{cake.picUrl}}">
+      {{cake.id}}
     </div>
-    <div class="detail">
-      <div>
-        {{cake.id}}
+    <div>
+      {{cake.name}}
+    </div>
+  </div>
+  <div class="btn">
+    <ng-template #input_content>
+      <input [(ngModel)]="cake.name">
+      <div class="editBtn" (click)="editStatus()">
+        <div class="text">OK!</div>
       </div>
-      <div>
-        {{cake.name}}
-      </div>
+    </ng-template>
+    <div *ngIf="isNeedEditting;else input_content" class="editBtn" (click)="editStatus()">
+      <div class="text">Edit</div>
+    </div>
   </div>
 </div>

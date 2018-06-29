@@ -13,4 +13,11 @@ export class CakeDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  isNeedEditting = true;
+
+  editStatus(){
+    this.isNeedEditting = !this.isNeedEditting;
+    console.log(this.isNeedEditting);
+  }
+
 }
