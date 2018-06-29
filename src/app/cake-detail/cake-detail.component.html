@@ -1,3 +1,15 @@
-<p>
-  cake-detail works!
-</p>
+
+<h1 *ngIf="cake">{{cake.name}} Details!</h1>
+<div *ngIf="cake" class="content">
+    <div>
+      <img src="./assets/imgs/{{cake.picUrl}}">
+    </div>
+    <div class="detail">
+      <div>
+        {{cake.id}}
+      </div>
+      <div>
+        {{cake.name}}
+      </div>
+  </div>
+</div>
