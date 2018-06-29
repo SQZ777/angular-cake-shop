@@ -1,0 +1,40 @@
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 20px;
+    width:260px;
+    height:300px;
+    font-size: 1.2em;
+}
+
+.content img{
+    display: flex;
+    width:180px;
+    height:180px;
+    padding: 10px;
+    border-radius: .5em;
+    background-color: lightgray;
+}
+
+.content img:hover{
+    width: 220px;
+    height: 220px;
+    transition: .3s;
+    -webkit-filter: brightness(1.1); 
+    filter: brightness(1.1);
+    padding: 0px;
+}
+
+.content .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:whitesmoke;
+    background-color: slategray;
+    border-radius: 5px;
+    margin-top: 18px;
+    padding: 5px;
+}
