@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import {Cake} from '../cake';
 @Component({
   selector: 'app-cake-detail',
   templateUrl: './cake-detail.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CakeDetailComponent implements OnInit {
 
+  @Input() cake:Cake;
   constructor() { }
 
   ngOnInit() {
