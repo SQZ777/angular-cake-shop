@@ -1,9 +1,9 @@
 <h3>Top Cakes</h3>
 
 <div class="grid gird-pad">
-<a *ngFor="let cake of cakes">
-  <div>
-    {{cake.name}}
-  </div>
-</a>
+  <a *ngFor="let cake of cakes" routerLink="/detail/{{cake.id}}">
+    <div>
+      {{cake.name}}
+    </div>
+  </a>
 </div>

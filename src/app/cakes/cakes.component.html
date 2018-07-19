@@ -1,14 +1,13 @@
 <h1>My Cakes</h1>
 <ul class="cake">
-  <li *ngFor="let cake of cakes"
-  (click)="onSelect(cake)">
-    <span class="badge">
-      {{cake.id}}
-    </span>
-    {{cake.name}}
+  <li *ngFor="let cake of cakes">
+    <a routerLink="/detail/{{cake.id}}">
+      <span class="badge">
+        {{cake.id}}
+      </span>
+      {{cake.name}}
+    </a>
   </li>
 </ul>
 
-<app-cake-detail [cake]="selectedCake"></app-cake-detail>
-
-
+<!-- <app-cake-detail [cake]="selectedCake"></app-cake-detail> -->

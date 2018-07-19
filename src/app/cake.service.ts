@@ -14,4 +14,9 @@ export class CakeService {
     this.messageService.add('CakeService: fetched cakes');
     return of(CAKES);
   }
+
+  getCake(id: number): Observable<Cake> {
+    this.messageService.add(`CakeService: fetched cake id: ${id}`);
+    return of(CAKES.find(cakes => cakes.id === id));
+  }
 }

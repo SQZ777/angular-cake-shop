@@ -15,12 +15,6 @@ export class CakesComponent implements OnInit {
   ngOnInit() {
     this.getCakes();
   }
-  // tslint:disable-next-line:member-ordering
-  selectedCake: Cake;
-
-  onSelect(cake: Cake): void {
-    this.selectedCake = cake;
-  }
 
   getCakes(): void {
     this.cakeService.getCakes().subscribe(cakes => this.cakes = cakes);
