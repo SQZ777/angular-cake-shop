@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CakesComponent } from './cakes/cakes.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: 'cakes', component: CakesComponent }
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'cakes', component: CakesComponent },
+  { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [
     RouterModule
   ]
