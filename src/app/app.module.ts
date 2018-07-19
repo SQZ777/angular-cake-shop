@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CakesComponent } from './cakes/cakes.component';
 import { CakeDetailComponent } from './cake-detail/cake-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
